@@ -1,0 +1,80 @@
+/* background style */
+body {
+    background-color: #141414;
+    background-image: url("../img/home_background.png");
+    background-repeat: no-repeat;
+        /* 이미지를 바둑판처럼 반복하지 말라는 뜻 */
+    background-position: center;
+    background-size: cover;
+        /* w:h 비율을 유지하고, 컨테이너의 크기를 초과하면 이미지의 일부만 표시 */
+    height: 100vh;
+    overflow: hidden;
+    font-family: NeoDunggeunmo Pro;
+
+}
+
+.top {
+    margin-top: 10vw;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+/* title style */
+.title {
+    vertical-align: middle;
+    /*padding-top: 10%;*/
+    /*margin: 4vh auto;*/
+    width: 100%
+}
+.title img {
+    max-width: 100%;
+    object-fit: contain;
+    margin: auto;
+    display: block;
+
+}
+
+
+.middle {
+    margin-top: 5vw;
+    margin-bottom: 5vw;
+}
+
+/* sub-title style */
+.sub-title {
+    color: #636363;
+    text-align: center;
+    font-weight: 400;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    width: 80vw;
+    font-size: clamp(0.5vw, 2.5vw, 3vw);
+    text-shadow: 0.2vw 0.2vw 0.1vw rgba(255, 255, 255, 0.25);
+}
+
+/* go chat button */
+.go-chat-button {
+    width: 60vw;
+    margin: 2vh auto;
+    position: relative;
+    max-width: 400px;
+
+}
+
+.go-chat-button img {
+    width: 100%;
+    vertical-align: middle;
+}
+
+.button-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    font-size: clamp(0.5em, 4.5vw, 2em);
+    text-align: center;
+    text-shadow: 0.4vw 0.4vw 0.2vw rgba(0, 0, 0, 0.25);
+    color: #EEE;
+    font-weight: 400;
+    white-space: nowrap; /* 자동으로 엔터 안 되도록 */
+}
